@@ -1,0 +1,446 @@
+[
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_list_holder_user.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/list_holder_user.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_activity_sign_in.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable_stadium_icon.jpeg.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/drawable/stadium_icon.jpeg"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_x_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/x_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/menu_menu.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/menu/menu.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_like_red_fill.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/like_red_fill.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable_splash.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/drawable/splash.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_now_playing_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/now_playing_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_ic_arrow_back_black_24dp.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_arrow_back_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_ic_search_black_24dp.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_location.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/location.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_activity_movies.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/activity_movies.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_back_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/back_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_ic_star_black_24dp.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_star_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_activity_registration.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/activity_registration.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_like_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/like_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_top_rated_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/top_rated_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_arrow_back_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_fragment_top_rated.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/fragment_top_rated.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_activity_search_movies.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/activity_search_movies.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-v24_icon_movie.jpeg.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/drawable-v24/icon_movie.jpeg"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_like_red_fill.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/like_red_fill.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_star_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_star_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_activity_movie_details.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/activity_movie_details.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_search_black_24dp.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_search_red.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/search_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/like_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_holder_movies.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/holder_movies.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_now_playing_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/now_playing_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/top_rated_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_search_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/search_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_fragment_map.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/fragment_map.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxhdpi_back_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/back_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_x_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxxhdpi/x_red.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-mdpi_location.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/location.png"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/layout_fragment_favorites.xml.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/src/main/res/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_search_black_24dp.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-ldpi/ic_search_black_24dp.png"
+    }
+]
