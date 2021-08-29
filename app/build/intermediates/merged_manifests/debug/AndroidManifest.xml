@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fkulesevic.movielicious"
+    package="ferit.amaricic.hr"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,7 +22,7 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="com.fkulesevic.movielicious.App"
+        android:name="com.amaricevic.stadiums.App"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -32,7 +32,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.fkulesevic.movielicious.ui.splash.SplashActivity"
+            android:name="com.amaricevic.stadiums.ui.splash.SplashActivity"
             android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,21 +42,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.signIn.SignInActivity"
+            android:name="com.amaricevic.stadiums.ui.signIn.SignInActivity"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.registration.RegistrationActivity"
+            android:name="com.amaricevic.stadiums.ui.registration.RegistrationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.stadiums.StadiumsActivity"
+            android:name="com.amaricevic.stadiums.ui.stadiums.StadiumsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" >
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.stadium_details.StadiumDetailsActivity"
+            android:name="com.amaricevic.stadiums.ui.stadium_details.StadiumDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" >
         </activity>
@@ -132,7 +132,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.fkulesevic.movielicious.com.squareup.picasso"
+            android:authorities="ferit.amaricic.hr.com.squareup.picasso"
             android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"
@@ -145,7 +145,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.fkulesevic.movielicious.firebaseinitprovider"
+            android:authorities="ferit.amaricic.hr.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />

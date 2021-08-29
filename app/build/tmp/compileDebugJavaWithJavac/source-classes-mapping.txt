@@ -1,40 +1,40 @@
-com/fkulesevic/movielicious/presentation/StadiumSearchPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.StadiumSearchPresenterImpl_Factory
-com/fkulesevic/movielicious/presentation/AllStadiumsPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.AllStadiumsPresenterImpl_Factory
-com/fkulesevic/movielicious/BuildConfig.java
- com.fkulesevic.movielicious.BuildConfig
-com/fkulesevic/movielicious/di/module/AppModule_PreferenceHelperFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_PreferenceHelperFactory
-com/fkulesevic/movielicious/presentation/StadiumDetailsPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.StadiumDetailsPresenterImpl_Factory
-com/fkulesevic/movielicious/di/DaggerAppComponent.java
- com.fkulesevic.movielicious.di.DaggerAppComponent
- com.fkulesevic.movielicious.di.DaggerAppComponent$1
- com.fkulesevic.movielicious.di.DaggerAppComponent$Builder
-com/fkulesevic/movielicious/di/module/AppModule_FirebaseAuthFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_FirebaseAuthFactory
-com/fkulesevic/movielicious/presentation/MapPresetnerImpl_Factory.java
- com.fkulesevic.movielicious.presentation.MapPresetnerImpl_Factory
-com/fkulesevic/movielicious/firebase/authentication/AuthenticationHelperImpl_Factory.java
- com.fkulesevic.movielicious.firebase.authentication.AuthenticationHelperImpl_Factory
-com/fkulesevic/movielicious/di/module/AppModule_ProvideContextFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_ProvideContextFactory
-com/fkulesevic/movielicious/preferences/PreferencesHelperImpl_Factory.java
- com.fkulesevic.movielicious.preferences.PreferencesHelperImpl_Factory
-com/fkulesevic/movielicious/presentation/RegistrationPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.RegistrationPresenterImpl_Factory
-com/fkulesevic/movielicious/di/module/AppModule_FirebaseDatabaseFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_FirebaseDatabaseFactory
-com/fkulesevic/movielicious/presentation/SignInPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.SignInPresenterImpl_Factory
-com/fkulesevic/movielicious/di/module/AppModule_FirebaseReferenceFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_FirebaseReferenceFactory
-com/fkulesevic/movielicious/presentation/SplashPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.SplashPresenterImpl_Factory
-com/fkulesevic/movielicious/presentation/FavoritesPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.FavoritesPresenterImpl_Factory
-com/fkulesevic/movielicious/firebase/database/DatabaseHelperImpl_Factory.java
- com.fkulesevic.movielicious.firebase.database.DatabaseHelperImpl_Factory
-com/fkulesevic/movielicious/di/module/AppModule_SharedPreferencesFactory.java
- com.fkulesevic.movielicious.di.module.AppModule_SharedPreferencesFactory
+com/amaricevic/stadiums/presentation/StadiumDetailsPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.StadiumDetailsPresenterImpl_Factory
+com/amaricevic/stadiums/di/module/AppModule_FirebaseReferenceFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_FirebaseReferenceFactory
+com/amaricevic/stadiums/firebase/database/DatabaseHelperImpl_Factory.java
+ com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl_Factory
+com/amaricevic/stadiums/di/module/AppModule_SharedPreferencesFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_SharedPreferencesFactory
+com/amaricevic/stadiums/BuildConfig.java
+ com.amaricevic.stadiums.BuildConfig
+com/amaricevic/stadiums/di/module/AppModule_PreferenceHelperFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_PreferenceHelperFactory
+com/amaricevic/stadiums/di/module/AppModule_FirebaseDatabaseFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_FirebaseDatabaseFactory
+com/amaricevic/stadiums/presentation/RegistrationPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.RegistrationPresenterImpl_Factory
+com/amaricevic/stadiums/presentation/FavoritesPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.FavoritesPresenterImpl_Factory
+com/amaricevic/stadiums/di/DaggerAppComponent.java
+ com.amaricevic.stadiums.di.DaggerAppComponent
+ com.amaricevic.stadiums.di.DaggerAppComponent$1
+ com.amaricevic.stadiums.di.DaggerAppComponent$Builder
+com/amaricevic/stadiums/preferences/PreferencesHelperImpl_Factory.java
+ com.amaricevic.stadiums.preferences.PreferencesHelperImpl_Factory
+com/amaricevic/stadiums/presentation/AllStadiumsPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.AllStadiumsPresenterImpl_Factory
+com/amaricevic/stadiums/presentation/SignInPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.SignInPresenterImpl_Factory
+com/amaricevic/stadiums/firebase/authentication/AuthenticationHelperImpl_Factory.java
+ com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl_Factory
+com/amaricevic/stadiums/presentation/MapPresetnerImpl_Factory.java
+ com.amaricevic.stadiums.presentation.MapPresetnerImpl_Factory
+com/amaricevic/stadiums/presentation/StadiumSearchPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.StadiumSearchPresenterImpl_Factory
+com/amaricevic/stadiums/di/module/AppModule_ProvideContextFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_ProvideContextFactory
+com/amaricevic/stadiums/di/module/AppModule_FirebaseAuthFactory.java
+ com.amaricevic.stadiums.di.module.AppModule_FirebaseAuthFactory
+com/amaricevic/stadiums/presentation/SplashPresenterImpl_Factory.java
+ com.amaricevic.stadiums.presentation.SplashPresenterImpl_Factory

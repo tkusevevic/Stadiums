@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:238307904370:android:db3d14c6c617087009ebeb",
+        "mobilesdk_app_id": "1:238307904370:android:80945c529f6ff5ea09ebeb",
         "android_client_info": {
-          "package_name": "com.fkulesevic.movielicious"
+          "package_name": "ferit.amaricic.hr"
         }
       },
       "oauth_client": [

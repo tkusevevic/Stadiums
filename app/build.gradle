@@ -11,7 +11,7 @@ apply plugin: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.fkulesevic.movielicious"
+        applicationId "ferit.amaricic.hr"
         minSdkVersion 17
         targetSdkVersion 30
         versionCode 1

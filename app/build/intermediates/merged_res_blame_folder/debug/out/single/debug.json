@@ -32,12 +32,12 @@
         "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xxhdpi/search_red.png"
     },
     {
-        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_top_rated_red.png.flat",
-        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/top_rated_red.png"
-    },
-    {
         "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_x_red.xml.flat",
         "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/x_red.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_top_rated_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/top_rated_red.png"
     },
     {
         "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/menu_menu.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-mdpi/now_playing_red.png"
     },
     {
-        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_like_red.png.flat",
-        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/like_red.png"
-    },
-    {
         "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-anydpi-v21_ic_arrow_back_black_24dp.xml.flat",
         "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_arrow_back_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/drawable-xhdpi_like_red.png.flat",
+        "source": "/Users/tkusevic/Desktop/Stadiums/app/build/generated/res/pngs/debug/drawable-xhdpi/like_red.png"
     },
     {
         "merged": "/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",

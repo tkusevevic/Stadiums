@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.fkulesevic.movielicious"
+3    package="ferit.amaricic.hr"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -42,8 +42,8 @@
 23
 24    <application
 24-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:10:5-52:19
-25        android:name="com.fkulesevic.movielicious.App"
-25-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:11:9-28
+25        android:name="com.amaricevic.stadiums.App"
+25-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:11:9-51
 26        android:allowBackup="true"
 26-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:12:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -61,8 +61,8 @@
 33-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:17:9-40
 34        <activity
 34-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:19:9-27:20
-35            android:name="com.fkulesevic.movielicious.ui.splash.SplashActivity"
-35-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:20:13-80
+35            android:name="com.amaricevic.stadiums.ui.splash.SplashActivity"
+35-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:20:13-76
 36            android:theme="@style/SplashTheme" >
 36-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:21:13-47
 37            <intent-filter>
@@ -81,15 +81,15 @@
 43        </activity>
 44        <activity
 44-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:29:9-32:20
-45            android:name="com.fkulesevic.movielicious.ui.signIn.SignInActivity"
-45-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:30:13-80
+45            android:name="com.amaricevic.stadiums.ui.signIn.SignInActivity"
+45-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:30:13-76
 46            android:windowSoftInputMode="stateHidden" >
 46-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:31:13-54
 47        </activity>
 48        <activity
 48-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:33:9-37:20
-49            android:name="com.fkulesevic.movielicious.ui.registration.RegistrationActivity"
-49-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:34:13-92
+49            android:name="com.amaricevic.stadiums.ui.registration.RegistrationActivity"
+49-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:34:13-88
 50            android:screenOrientation="portrait"
 50-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:35:13-49
 51            android:windowSoftInputMode="stateHidden" >
@@ -97,8 +97,8 @@
 52        </activity>
 53        <activity
 53-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:38:9-42:20
-54            android:name="com.fkulesevic.movielicious.ui.stadiums.StadiumsActivity"
-54-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:39:13-84
+54            android:name="com.amaricevic.stadiums.ui.stadiums.StadiumsActivity"
+54-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:39:13-80
 55            android:screenOrientation="portrait"
 55-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:40:13-49
 56            android:windowSoftInputMode="stateHidden" >
@@ -106,8 +106,8 @@
 57        </activity>
 58        <activity
 58-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:43:9-47:20
-59            android:name="com.fkulesevic.movielicious.ui.stadium_details.StadiumDetailsActivity"
-59-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:44:13-97
+59            android:name="com.amaricevic.stadiums.ui.stadium_details.StadiumDetailsActivity"
+59-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:44:13-93
 60            android:screenOrientation="portrait"
 60-->/Users/tkusevic/Desktop/Stadiums/app/src/main/AndroidManifest.xml:45:13-49
 61            android:windowSoftInputMode="stateHidden" >
@@ -248,7 +248,7 @@
 133-->[com.squareup.picasso:picasso:2.71828] /Users/tkusevic/.gradle/caches/transforms-3/13c3540bba1a049d43ecd5ad03fbf2a1/transformed/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 134            android:name="com.squareup.picasso.PicassoProvider"
 134-->[com.squareup.picasso:picasso:2.71828] /Users/tkusevic/.gradle/caches/transforms-3/13c3540bba1a049d43ecd5ad03fbf2a1/transformed/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-135            android:authorities="com.fkulesevic.movielicious.com.squareup.picasso"
+135            android:authorities="ferit.amaricic.hr.com.squareup.picasso"
 135-->[com.squareup.picasso:picasso:2.71828] /Users/tkusevic/.gradle/caches/transforms-3/13c3540bba1a049d43ecd5ad03fbf2a1/transformed/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
 136            android:exported="false" /> <!-- Needs to be explicitly declared on P+ -->
 136-->[com.squareup.picasso:picasso:2.71828] /Users/tkusevic/.gradle/caches/transforms-3/13c3540bba1a049d43ecd5ad03fbf2a1/transformed/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
@@ -272,7 +272,7 @@
 146-->[com.google.firebase:firebase-common:20.0.0] /Users/tkusevic/.gradle/caches/transforms-3/898c4714b83bd5324331afe8b361dfd8/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
 147            android:name="com.google.firebase.provider.FirebaseInitProvider"
 147-->[com.google.firebase:firebase-common:20.0.0] /Users/tkusevic/.gradle/caches/transforms-3/898c4714b83bd5324331afe8b361dfd8/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
-148            android:authorities="com.fkulesevic.movielicious.firebaseinitprovider"
+148            android:authorities="ferit.amaricic.hr.firebaseinitprovider"
 148-->[com.google.firebase:firebase-common:20.0.0] /Users/tkusevic/.gradle/caches/transforms-3/898c4714b83bd5324331afe8b361dfd8/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
 149            android:directBootAware="true"
 149-->[com.google.firebase:firebase-common:20.0.0] /Users/tkusevic/.gradle/caches/transforms-3/898c4714b83bd5324331afe8b361dfd8/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43

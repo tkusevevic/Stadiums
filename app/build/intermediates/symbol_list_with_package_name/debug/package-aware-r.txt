@@ -1,4 +1,4 @@
-com.fkulesevic.movielicious
+com.amaricevic.stadiums
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1582,7 +1582,6 @@ id ignore
 id ignoreRequest
 id image
 id imageDetails
-id imageMovieDetails
 id immediateStop
 id included
 id info
@@ -1606,7 +1605,6 @@ id left
 id legacy
 id light
 id like
-id likeMovieDetails
 id likeStadiumDetails
 id line1
 id line3
@@ -1861,7 +1859,6 @@ layout activity_details
 layout activity_registration
 layout activity_search
 layout activity_sign_in
-layout activity_stadium_details
 layout activity_stadiums
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

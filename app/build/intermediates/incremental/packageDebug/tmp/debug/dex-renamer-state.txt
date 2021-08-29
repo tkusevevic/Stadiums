@@ -1,4 +1,4 @@
-#Sun Aug 29 20:52:36 CEST 2021
+#Sun Aug 29 21:07:20 CEST 2021
 base.1=/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/dex/debug/mergeDexDebug/classes2.dex
 path.1=classes2.dex
 base.0=/Users/tkusevic/Desktop/Stadiums/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
