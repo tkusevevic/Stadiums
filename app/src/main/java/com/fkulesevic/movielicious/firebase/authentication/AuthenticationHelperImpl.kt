@@ -43,8 +43,6 @@ class AuthenticationHelperImpl @Inject constructor(private val firebaseAuth: Fir
                     listener.onSuccessfulRequest(mapToUser())
                 }
             } else {
-                Log.d("TOMI", task.isSuccessful.toString());
-                Log.d("TOMI", task.toString());
                 listener.onFailedRequest()
             }
         }
@@ -60,7 +58,6 @@ class AuthenticationHelperImpl @Inject constructor(private val firebaseAuth: Fir
         firebaseAuth.signInWithCredential(credential)
                 .addOnCompleteListener {
                     val user = getCurrentUser()?.mapToUser()
-                    //TODO if(USER DOESNT EXIST) user?.let { databaseHelper.saveUser(it) }
                     user?.let { listener.onSuccessfulRequest(it) }
 
                 }

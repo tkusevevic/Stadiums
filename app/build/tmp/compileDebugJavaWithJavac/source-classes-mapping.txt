@@ -1,5 +1,7 @@
 com/fkulesevic/movielicious/presentation/StadiumSearchPresenterImpl_Factory.java
  com.fkulesevic.movielicious.presentation.StadiumSearchPresenterImpl_Factory
+com/fkulesevic/movielicious/presentation/AllStadiumsPresenterImpl_Factory.java
+ com.fkulesevic.movielicious.presentation.AllStadiumsPresenterImpl_Factory
 com/fkulesevic/movielicious/BuildConfig.java
  com.fkulesevic.movielicious.BuildConfig
 com/fkulesevic/movielicious/di/module/AppModule_PreferenceHelperFactory.java
@@ -14,8 +16,6 @@ com/fkulesevic/movielicious/di/module/AppModule_FirebaseAuthFactory.java
  com.fkulesevic.movielicious.di.module.AppModule_FirebaseAuthFactory
 com/fkulesevic/movielicious/presentation/MapPresetnerImpl_Factory.java
  com.fkulesevic.movielicious.presentation.MapPresetnerImpl_Factory
-com/fkulesevic/movielicious/presentation/TopRatedPresenterImpl_Factory.java
- com.fkulesevic.movielicious.presentation.TopRatedPresenterImpl_Factory
 com/fkulesevic/movielicious/firebase/authentication/AuthenticationHelperImpl_Factory.java
  com.fkulesevic.movielicious.firebase.authentication.AuthenticationHelperImpl_Factory
 com/fkulesevic/movielicious/di/module/AppModule_ProvideContextFactory.java

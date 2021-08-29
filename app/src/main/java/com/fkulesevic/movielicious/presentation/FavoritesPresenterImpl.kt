@@ -4,7 +4,7 @@ import com.fkulesevic.movielicious.data.model.Stadium
 import com.fkulesevic.movielicious.firebase.StadiumsRequestListener
 import com.fkulesevic.movielicious.firebase.authentication.AuthenticationHelper
 import com.fkulesevic.movielicious.firebase.database.DatabaseHelper
-import com.fkulesevic.movielicious.ui.movies.views.FavoritesView
+import com.fkulesevic.movielicious.ui.stadiums.views.FavoritesView
 import javax.inject.Inject
 
 class FavoritesPresenterImpl @Inject constructor(private val authenticationHelper: AuthenticationHelper,
@@ -16,22 +16,22 @@ class FavoritesPresenterImpl @Inject constructor(private val authenticationHelpe
         this.favoritesView = baseView
     }
 
-    override fun getFavoriteMovies() {
+    override fun getFavorites() {
         val userId = authenticationHelper.getCurrentUserId()
-        userId?.let { database.listenToFavoriteStadiums(it, { this.onSuccessfulRequestMovies(it) }) }
+        userId?.let { database.listenToFavoriteStadiums(it, { this.onSuccessfulRequest(it) }) }
     }
 
-    override fun onSuccessfulRequestMovies(stadiums: List<Stadium>) {
+    override fun onSuccessfulRequest(stadiums: List<Stadium>) {
         if (stadiums.isEmpty()) {
             favoritesView.showMessageOnScreen()
         } else {
             favoritesView.hideMessageOnScreen()
         }
-        favoritesView.setMovies(stadiums)
+        favoritesView.setFavorites(stadiums)
     }
 
-    override fun onFailedRequestMovies() {
-        //TODO couldn't load favorites movies
+    override fun onFailedRequest() {
+        //TODO couldn't load favorites
     }
 
     override fun onLikeTapped(stadium: Stadium) {

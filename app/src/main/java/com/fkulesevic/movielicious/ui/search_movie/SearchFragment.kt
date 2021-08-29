@@ -12,21 +12,21 @@ import com.fkulesevic.movielicious.commons.constants.STADIUM_KEY
 import com.fkulesevic.movielicious.commons.extensions.onClick
 import com.fkulesevic.movielicious.commons.extensions.onTextChange
 import com.fkulesevic.movielicious.data.model.Stadium
-import com.fkulesevic.movielicious.movieSearchPresenter
+import com.fkulesevic.movielicious.searchPresenter
 import com.fkulesevic.movielicious.presentation.StadiumSearchPresenter
-import com.fkulesevic.movielicious.ui.listeners.OnMovieClickListener
-import com.fkulesevic.movielicious.ui.movie_details.MovieDetailsActivity
-import com.fkulesevic.movielicious.ui.movies.adapter.AllStadiumsAdapter
-import kotlinx.android.synthetic.main.activity_search_movies.*
+import com.fkulesevic.movielicious.ui.listeners.OnItemClickListener
+import com.fkulesevic.movielicious.ui.stadium_details.StadiumDetailsActivity
+import com.fkulesevic.movielicious.ui.stadiums.adapter.AllStadiumsAdapter
+import kotlinx.android.synthetic.main.activity_search.*
 
-class SearchFragment : Fragment(), OnMovieClickListener, SearchMovieView {
+class SearchFragment : Fragment(), OnItemClickListener, SearchView {
 
     private val adapter by lazy { AllStadiumsAdapter(this) }
 
-    private val presenter: StadiumSearchPresenter by lazy { movieSearchPresenter() }
+    private val presenter: StadiumSearchPresenter by lazy { searchPresenter() }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.activity_search_movies, container, false)
+        return inflater.inflate(R.layout.activity_search, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -44,7 +44,7 @@ class SearchFragment : Fragment(), OnMovieClickListener, SearchMovieView {
         }
 
         searchInput.onTextChange {
-            presenter.getMovies(searchInput.text.toString())
+            presenter.getStadiums(searchInput.text.toString())
             if (searchInput.text.toString().isEmpty() || searchInput.text.toString().isBlank()) {
                 presenter.clearList()
             }
@@ -61,23 +61,23 @@ class SearchFragment : Fragment(), OnMovieClickListener, SearchMovieView {
         recyclerViewSearch.layoutManager = lm
     }
 
-    override fun setMovies(stadiums: List<Stadium>) = adapter.setMovies(stadiums)
+    override fun setStadiums(stadiums: List<Stadium>) = adapter.setItems(stadiums)
 
-    override fun onMovieClick(stadium: Stadium) {
+    override fun onStadiumClick(stadium: Stadium) {
         val bundle = Bundle()
         bundle.putSerializable(STADIUM_KEY, stadium)
-        val intent = Intent(activity, MovieDetailsActivity::class.java).putExtras(bundle)
+        val intent = Intent(activity, StadiumDetailsActivity::class.java).putExtras(bundle)
         startActivity(intent)
     }
 
     override fun onLikeClick(stadium: Stadium) {
         presenter.onLikeTapped(stadium)
-        adapter.setMovieLiked(stadium.id, stadium.isLiked)
+        adapter.setStadiumLiked(stadium.id, stadium.isLiked)
     }
 
-    override fun addMovies(stadiums: List<Stadium>) = adapter.addMovies(stadiums)
+    override fun addStadiums(stadiums: List<Stadium>) = adapter.addItems(stadiums)
 
-    override fun setFavorites(favorites: List<Stadium>) = adapter.setFavoriteMovies(favorites)
+    override fun setFavorites(favorites: List<Stadium>) = adapter.setFavorite(favorites)
 
-    override fun clearList() = adapter.clearMovies()
+    override fun clearList() = adapter.clearItems()
 }

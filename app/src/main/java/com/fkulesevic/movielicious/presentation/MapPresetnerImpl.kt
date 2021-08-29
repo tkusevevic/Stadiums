@@ -19,14 +19,14 @@ class MapPresetnerImpl @Inject constructor(private val authenticationHelper: Aut
 
     override fun getStadiums() {
         val userId = authenticationHelper.getCurrentUserId()
-        userId?.let { database.getAllStadionsOnce(it, { this.onSuccessfulRequestMovies(it) }) }
+        userId?.let { database.getAllStadionsOnce(it, { this.onSuccessfulRequest(it) }) }
     }
 
-    override fun onSuccessfulRequestMovies(stadiums: List<Stadium>) {
+    override fun onSuccessfulRequest(stadiums: List<Stadium>) {
         mapView.setStadiums(stadiums)
     }
 
-    override fun onFailedRequestMovies() {
-        //TODO couldn't load favorites movies
+    override fun onFailedRequest() {
+        //TODO couldn't load favorites
     }
 }

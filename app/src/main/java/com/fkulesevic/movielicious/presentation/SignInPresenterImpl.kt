@@ -32,8 +32,6 @@ class SignInPresenterImpl @Inject constructor(private val authenticationHelper: 
     }
 
     private fun tryToSignIn(email: String, password: String) {
-        Log.d("TOMI", email)
-        Log.d("TOMI", password)
         authenticationHelper.logTheUserIn(email, password, this)
     }
 
@@ -49,7 +47,7 @@ class SignInPresenterImpl @Inject constructor(private val authenticationHelper: 
 
     override fun onSuccessfulRequest(user: User) {
         preferencesHelper.saveId(user.id)
-        signView.startMoviesActivity(user)
+        signView.startStadiumActivity(user)
         signView.hideProgressAndShowOther()
     }
 

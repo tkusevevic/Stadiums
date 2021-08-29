@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.fkulesevic.movielicious.presentation.SplashPresenter
 import com.fkulesevic.movielicious.splashPresenter
-import com.fkulesevic.movielicious.ui.movies.StadiumsActivity
+import com.fkulesevic.movielicious.ui.stadiums.StadiumsActivity
 import com.fkulesevic.movielicious.ui.signIn.SignInActivity
 
 class SplashActivity : AppCompatActivity(), SplashView {

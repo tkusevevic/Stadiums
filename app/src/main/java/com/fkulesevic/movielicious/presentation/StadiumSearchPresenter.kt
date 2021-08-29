@@ -2,11 +2,11 @@ package com.fkulesevic.movielicious.presentation
 
 import com.fkulesevic.movielicious.base.BasePresenter
 import com.fkulesevic.movielicious.data.model.Stadium
-import com.fkulesevic.movielicious.ui.search_movie.SearchMovieView
+import com.fkulesevic.movielicious.ui.search_movie.SearchView
 
-interface StadiumSearchPresenter : BasePresenter<SearchMovieView> {
+interface StadiumSearchPresenter : BasePresenter<SearchView> {
 
-    fun getMovies(input: String)
+    fun getStadiums(input: String)
 
     fun setAllStadiums()
 

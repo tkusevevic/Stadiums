@@ -1518,6 +1518,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descriptionStadiumDetails
+id descriptionUserHolder
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1580,6 +1581,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageDetails
 id imageMovieDetails
 id immediateStop
 id included
@@ -1594,10 +1596,10 @@ id largeLabel
 id layout
 id layoutEmail
 id layoutEmailSign
-id layoutMovies
 id layoutName
 id layoutPassword
 id layoutPasswordSign
+id layoutStadiums
 id layoutWithoutImage
 id layoutWithoutImageSign
 id left
@@ -1605,6 +1607,7 @@ id legacy
 id light
 id like
 id likeMovieDetails
+id likeStadiumDetails
 id line1
 id line3
 id linear
@@ -1619,7 +1622,6 @@ id message
 id middle
 id mini
 id motion_base
-id moviesDescriptionUserHolder
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
@@ -1630,8 +1632,8 @@ id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id noFavorites
+id noStadiums
 id noState
-id noTopRatedMovies
 id none
 id normal
 id north
@@ -1855,11 +1857,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_movie_details
-layout activity_movies
+layout activity_details
 layout activity_registration
-layout activity_search_movies
+layout activity_search
 layout activity_sign_in
+layout activity_stadium_details
+layout activity_stadiums
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -1877,10 +1880,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_all_stadiums
 layout fragment_favorites
 layout fragment_map
-layout fragment_top_rated
-layout holder_movies
+layout holder_stadium
 layout list_holder_user
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

@@ -36,12 +36,12 @@
             android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.movies.StadiumsActivity"
+            android:name="com.fkulesevic.movielicious.ui.stadiums.StadiumsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden">
         </activity>
         <activity
-            android:name="com.fkulesevic.movielicious.ui.movie_details.MovieDetailsActivity"
+            android:name="com.fkulesevic.movielicious.ui.stadium_details.StadiumDetailsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden">
         </activity>

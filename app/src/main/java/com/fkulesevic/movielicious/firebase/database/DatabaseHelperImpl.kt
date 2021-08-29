@@ -1,6 +1,5 @@
 package com.fkulesevic.movielicious.firebase.database
 
-import android.util.Log
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -32,47 +31,47 @@ class DatabaseHelperImpl @Inject constructor(private val reference: DatabaseRefe
     }
 
     override fun addFavorites(userId: String, stadiums: List<Stadium>) {
-        stadiums.forEach { movie ->
-            val userMovie = reference.child("users").child(userId).child("stadiums").child(movie.id.toString())
-            userMovie.setValue(movie)
+        stadiums.forEach { stadium ->
+            val userStadium = reference.child("users").child(userId).child("stadiums").child(stadium.id)
+            userStadium.setValue(stadium)
         }
     }
 
     override fun onStadiumLiked(userId: String, stadium: Stadium) {
-        val userMovies = reference.child("users").child(userId).child("stadiums").child(stadium.id.toString())
-        userMovies.setValue(if (!stadium.isLiked) null else stadium)
+        val userStadiums = reference.child("users").child(userId).child("stadiums").child(stadium.id)
+        userStadiums.setValue(if (!stadium.isLiked) null else stadium)
     }
 
-    override fun listenToFavoriteStadiums(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit) {
+    override fun listenToFavoriteStadiums(userId: String, onFavoriteReceived: (List<Stadium>) -> Unit) {
         reference.child("users").child(userId).child("stadiums").addValueEventListener(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
             override fun onDataChange(datasnapshot: DataSnapshot) {
                 val values = if (datasnapshot.hasChildren()) datasnapshot.children.map { it.getValue(Stadium::class.java) } else listOf()
 
-                onFavoriteMoviesReceived(values.filterNotNull())
+                onFavoriteReceived(values.filterNotNull())
             }
         })
     }
 
-    override fun getFavoriteStadionsOnce(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit) {
+    override fun getFavoriteStadionsOnce(userId: String, onFavoriteReceived: (List<Stadium>) -> Unit) {
         reference.child("users").child(userId).child("stadiums").addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
             override fun onDataChange(datasnapshot: DataSnapshot) {
                 val values = if (datasnapshot.hasChildren()) datasnapshot.children.map { it.getValue(Stadium::class.java) } else listOf<Stadium>()
-                onFavoriteMoviesReceived(values.filterNotNull())
+                onFavoriteReceived(values.filterNotNull())
             }
         })
     }
 
-    override fun getAllStadionsOnce(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit) {
+    override fun getAllStadionsOnce(userId: String, onFavoritesReceived: (List<Stadium>) -> Unit) {
         reference.child("stadiums").addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(error: DatabaseError) {}
 
             override fun onDataChange(datasnapshot: DataSnapshot) {
                 val values = if (datasnapshot.hasChildren()) datasnapshot.children.map { it.getValue(Stadium::class.java) } else listOf<Stadium>()
-                onFavoriteMoviesReceived(values.filterNotNull())
+                onFavoritesReceived(values.filterNotNull())
             }
         })
     }

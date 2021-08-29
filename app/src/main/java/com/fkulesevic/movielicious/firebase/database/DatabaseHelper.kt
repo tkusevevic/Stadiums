@@ -11,11 +11,11 @@ interface DatabaseHelper {
 
     fun onStadiumLiked(userId: String, stadium: Stadium)
 
-    fun listenToFavoriteStadiums(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit)
+    fun listenToFavoriteStadiums(userId: String, onFavoriteReceived: (List<Stadium>) -> Unit)
 
-    fun getFavoriteStadionsOnce(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit)
+    fun getFavoriteStadionsOnce(userId: String, onFavoriteReceived: (List<Stadium>) -> Unit)
 
-    fun getAllStadionsOnce(userId: String, onFavoriteMoviesReceived: (List<Stadium>) -> Unit)
+    fun getAllStadionsOnce(userId: String, onFavoritesReceived: (List<Stadium>) -> Unit)
 
     fun addFavorites(userId: String, stadiums: List<Stadium>)
 

@@ -16,7 +16,7 @@ interface SignInView {
 
     fun hideProgressAndShowOther()
 
-    fun startMoviesActivity(user: User)
+    fun startStadiumActivity(user: User)
 
     fun showMessage(message: String)
 }

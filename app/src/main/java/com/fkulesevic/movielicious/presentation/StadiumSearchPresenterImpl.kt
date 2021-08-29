@@ -5,41 +5,40 @@ import com.fkulesevic.movielicious.data.model.Stadium
 import com.fkulesevic.movielicious.firebase.StadiumsRequestListener
 import com.fkulesevic.movielicious.firebase.authentication.AuthenticationHelper
 import com.fkulesevic.movielicious.firebase.database.DatabaseHelper
-import com.fkulesevic.movielicious.ui.search_movie.SearchMovieView
+import com.fkulesevic.movielicious.ui.search_movie.SearchView
 import javax.inject.Inject
 
 class StadiumSearchPresenterImpl @Inject constructor(private val authenticationHelper: AuthenticationHelper,
                                                      private val databaseHelper: DatabaseHelper) : StadiumSearchPresenter, StadiumsRequestListener {
 
-    private lateinit var view: SearchMovieView
+    private lateinit var view: SearchView
 
-    override fun setBaseview(baseView: SearchMovieView) {
+    override fun setBaseview(baseView: SearchView) {
         view = baseView
     }
 
-    override fun getMovies(input: String): Unit = run {
+    override fun getStadiums(input: String): Unit = run {
         authenticationHelper.getCurrentUserId()?.run {
-            databaseHelper.getAllStadionsOnce(this) { onMoviesReceived(it.filter { it.name.lowercase().startsWith(input.lowercase()) }) }
+            databaseHelper.getAllStadionsOnce(this) { onItemsReceived(it.filter { it.name.lowercase().startsWith(input.lowercase()) }) }
         }
     }
 
     override fun setAllStadiums(): Unit = run {
         authenticationHelper.getCurrentUserId()?.run {
-            databaseHelper.getAllStadionsOnce(this) { onMoviesReceived(it) }
+            databaseHelper.getAllStadionsOnce(this) { onItemsReceived(it) }
         }
     }
 
-    private fun onMoviesReceived(list: List<Stadium>) {
-        Log.d("TOMANAA", list.toString())
-        view.setMovies(list)
+    private fun onItemsReceived(list: List<Stadium>) {
+        view.setStadiums(list)
         authenticationHelper.getCurrentUserId()?.run {
-            databaseHelper.getFavoriteStadionsOnce(this) { onSuccessfulRequestMovies(it) }
+            databaseHelper.getFavoriteStadionsOnce(this) { onSuccessfulRequest(it) }
         }
     }
 
-    override fun onSuccessfulRequestMovies(stadiums: List<Stadium>) = view.setFavorites(stadiums)
+    override fun onSuccessfulRequest(stadiums: List<Stadium>) = view.setFavorites(stadiums)
 
-    override fun onFailedRequestMovies() {
+    override fun onFailedRequest() {
         //TODO FAILED FETCH
     }
 
@@ -54,7 +53,7 @@ class StadiumSearchPresenterImpl @Inject constructor(private val authenticationH
 
     override fun getFavorites() {
         authenticationHelper.getCurrentUserId()?.run {
-            databaseHelper.listenToFavoriteStadiums(this, { onSuccessfulRequestMovies(it) })
+            databaseHelper.listenToFavoriteStadiums(this, { onSuccessfulRequest(it) })
         }
     }
 }

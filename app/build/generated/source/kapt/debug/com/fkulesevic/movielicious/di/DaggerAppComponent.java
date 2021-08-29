@@ -13,6 +13,8 @@ import com.fkulesevic.movielicious.di.module.AppModule_SharedPreferencesFactory;
 import com.fkulesevic.movielicious.firebase.authentication.AuthenticationHelperImpl;
 import com.fkulesevic.movielicious.firebase.database.DatabaseHelperImpl;
 import com.fkulesevic.movielicious.preferences.PreferencesHelper;
+import com.fkulesevic.movielicious.presentation.AllStadiumsPresenter;
+import com.fkulesevic.movielicious.presentation.AllStadiumsPresenterImpl;
 import com.fkulesevic.movielicious.presentation.FavoritesPresenter;
 import com.fkulesevic.movielicious.presentation.FavoritesPresenterImpl;
 import com.fkulesevic.movielicious.presentation.MapPresenter;
@@ -27,8 +29,6 @@ import com.fkulesevic.movielicious.presentation.StadiumDetailsPresenter;
 import com.fkulesevic.movielicious.presentation.StadiumDetailsPresenterImpl;
 import com.fkulesevic.movielicious.presentation.StadiumSearchPresenter;
 import com.fkulesevic.movielicious.presentation.StadiumSearchPresenterImpl;
-import com.fkulesevic.movielicious.presentation.TopRatedPresenter;
-import com.fkulesevic.movielicious.presentation.TopRatedPresenterImpl;
 import com.google.firebase.database.DatabaseReference;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Preconditions;
@@ -77,8 +77,8 @@ public final class DaggerAppComponent implements AppComponent {
     return new SignInPresenterImpl(authenticationHelperImpl(), preferencesHelper());
   }
 
-  private TopRatedPresenterImpl topRatedPresenterImpl() {
-    return new TopRatedPresenterImpl(authenticationHelperImpl(), databaseHelperImpl());
+  private AllStadiumsPresenterImpl allStadiumsPresenterImpl() {
+    return new AllStadiumsPresenterImpl(authenticationHelperImpl(), databaseHelperImpl());
   }
 
   private FavoritesPresenterImpl favoritesPresenterImpl() {
@@ -116,8 +116,8 @@ public final class DaggerAppComponent implements AppComponent {
   }
 
   @Override
-  public TopRatedPresenter topRatedPresenter() {
-    return topRatedPresenterImpl();
+  public AllStadiumsPresenter allStadiumsPresenter() {
+    return allStadiumsPresenterImpl();
   }
 
   @Override
@@ -126,7 +126,7 @@ public final class DaggerAppComponent implements AppComponent {
   }
 
   @Override
-  public StadiumDetailsPresenter movieDetailsPresenter() {
+  public StadiumDetailsPresenter stadiumDetailsPresenter() {
     return stadiumDetailsPresenterImpl();
   }
 
@@ -136,7 +136,7 @@ public final class DaggerAppComponent implements AppComponent {
   }
 
   @Override
-  public StadiumSearchPresenter movieSearchPresenter() {
+  public StadiumSearchPresenter stadiumSearchPresenter() {
     return stadiumSearchPresenterImpl();
   }
 

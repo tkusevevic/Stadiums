@@ -14,7 +14,7 @@ abstract class PresentationModule {
     abstract fun signInPresenter(signInPresenterImpl: SignInPresenterImpl): SignInPresenter
 
     @Binds
-    abstract fun topRatedPresenter(topRatedPresenterImpl: TopRatedPresenterImpl): TopRatedPresenter
+    abstract fun topRatedPresenter(topRatedPresenterImpl: AllStadiumsPresenterImpl): AllStadiumsPresenter
 
     @Binds
     abstract fun favoritesPresenter(favoritesPresenterImpl: FavoritesPresenterImpl): FavoritesPresenter
@@ -26,7 +26,7 @@ abstract class PresentationModule {
     abstract fun splashPresenter(splashPresenterImpl: SplashPresenterImpl): SplashPresenter
 
     @Binds
-    abstract fun movieSearchPresenter(movieSearchPresenterImpl: StadiumSearchPresenterImpl): StadiumSearchPresenter
+    abstract fun searchPresenter(movieSearchPresenterImpl: StadiumSearchPresenterImpl): StadiumSearchPresenter
 
     @Binds
     abstract fun mapPresenter(mapPresenterImpl: MapPresetnerImpl): MapPresenter

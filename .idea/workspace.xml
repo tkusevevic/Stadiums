@@ -13,13 +13,39 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2414a5db-2e92-4b70-be7e-376468f6b00c" name="Default Changelist" comment="" />
+    <list default="true" id="2414a5db-2e92-4b70-be7e-376468f6b00c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/fkulesevic/movielicious/di/DaggerAppComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/fkulesevic/movielicious/di/DaggerAppComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/fkulesevic/movielicious/presentation/TopRatedPresenterImpl_Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/com/fkulesevic/movielicious/presentation/TopRatedPresenterImpl_Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/AppProviders.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/AppProviders.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/di/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/di/AppComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/di/module/PresentationModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/di/module/PresentationModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/firebase/StadiumsRequestListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/firebase/StadiumsRequestListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/FavoritesPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/FavoritesPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/MapPresetnerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/MapPresetnerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumDetailsPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumDetailsPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumDetailsPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumDetailsPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumSearchPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/StadiumSearchPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/TopRatedPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/AllStadiumsPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/TopRatedPresenterImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/presentation/AllStadiumsPresenterImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/listeners/OnMovieClickListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/listeners/OnItemClickListener.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movie_details/MovieDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movie_details/StadiumDetailsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movie_details/MovieDetailsView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movie_details/DetailsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/AllStadiumsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/AllStadiumsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/FavoritesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/FavoritesFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/adapter/AllStadiumsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/adapter/AllStadiumsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/adapter/StadiumAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/adapter/StadiumAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/holder/StadiumViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/holder/StadiumViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/views/TopRatedView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/movies/views/AllStadiumsView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/search_movie/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/fkulesevic/movielicious/ui/search_movie/SearchFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_movie_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_details.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[29d4760a9805]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/tkusevic/.android/avd/Galaxy_Nexus_API_27.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -33,6 +59,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -42,6 +71,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1xK7SV6tAS2UDsdindVKg7sNpBI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>

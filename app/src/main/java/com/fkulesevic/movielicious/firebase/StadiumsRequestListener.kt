@@ -4,7 +4,7 @@ import com.fkulesevic.movielicious.data.model.Stadium
 
 interface StadiumsRequestListener {
 
-    fun onSuccessfulRequestMovies(stadiums: List<Stadium>)
+    fun onSuccessfulRequest(stadiums: List<Stadium>)
 
-    fun onFailedRequestMovies()
+    fun onFailedRequest()
 }

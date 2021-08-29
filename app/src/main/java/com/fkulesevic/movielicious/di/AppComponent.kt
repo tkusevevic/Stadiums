@@ -15,15 +15,15 @@ interface AppComponent {
 
     fun signInPresenter(): SignInPresenter
 
-    fun topRatedPresenter(): TopRatedPresenter
+    fun allStadiumsPresenter(): AllStadiumsPresenter
 
     fun favoritesPresenter(): FavoritesPresenter
 
-    fun movieDetailsPresenter(): StadiumDetailsPresenter
+    fun stadiumDetailsPresenter(): StadiumDetailsPresenter
 
     fun splashPresenter(): SplashPresenter
 
-    fun movieSearchPresenter(): StadiumSearchPresenter
+    fun stadiumSearchPresenter(): StadiumSearchPresenter
 
     fun mapPresenter(): MapPresenter
 }

@@ -12,7 +12,7 @@ import com.fkulesevic.movielicious.commons.extensions.show
 import com.fkulesevic.movielicious.data.model.User
 import com.fkulesevic.movielicious.presentation.SignInPresenter
 import com.fkulesevic.movielicious.signInPresenter
-import com.fkulesevic.movielicious.ui.movies.StadiumsActivity
+import com.fkulesevic.movielicious.ui.stadiums.StadiumsActivity
 import com.fkulesevic.movielicious.ui.registration.RegistrationActivity
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -65,7 +65,7 @@ class SignInActivity : AppCompatActivity(), SignInView {
         layoutWithoutImageSign.show()
     }
 
-    override fun startMoviesActivity(user: User) {
+    override fun startStadiumActivity(user: User) {
         val intent = Intent(this, StadiumsActivity::class.java)
         startActivity(intent)
         finish()
