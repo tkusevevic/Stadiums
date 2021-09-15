@@ -1,14 +1,14 @@
 package com.amaricevic.stadiums.ui.splash
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.amaricevic.stadiums.presentation.SplashPresenter
 import com.amaricevic.stadiums.splashPresenter
 import com.amaricevic.stadiums.ui.stadiums.StadiumsActivity
 import com.amaricevic.stadiums.ui.signIn.SignInActivity
 
-class SplashActivity : AppCompatActivity(), SplashView {
+class SplashActivity : Activity(), SplashView {
 
     private val presenter: SplashPresenter by lazy { splashPresenter() }
 

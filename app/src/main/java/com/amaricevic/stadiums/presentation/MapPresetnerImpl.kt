@@ -15,6 +15,7 @@ class MapPresetnerImpl @Inject constructor(private val authenticationHelper: Aut
 
     override fun setBaseview(baseView: MapView) {
         this.mapView = baseView
+
     }
 
     override fun getStadiums() {

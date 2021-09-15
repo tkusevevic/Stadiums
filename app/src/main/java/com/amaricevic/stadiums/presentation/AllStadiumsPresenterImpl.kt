@@ -47,7 +47,7 @@ class AllStadiumsPresenterImpl @Inject constructor(private val authenticationHel
     override fun onLikeTapped(stadium: Stadium) {
         stadium.isLiked = !stadium.isLiked
         authenticationHelper.getCurrentUser()?.uid?.run {
-            databaseHelper.onStadiumLiked(this, stadium)
+            databaseHelper.onStadiumLiked(authenticationHelper.getCurrentUser()?.uid.toString(), stadium)
         }
     }
 }
