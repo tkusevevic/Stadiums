@@ -8,7 +8,7 @@ interface AllStadiumsView {
 
     fun addStadions(stadiums: List<Stadium>)
 
-    fun setFavorites(favorites : List<Stadium>)
+    fun setFavorites(favorites: List<Stadium>)
 
     fun showMessageEmptyList()
 

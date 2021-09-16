@@ -1,23 +1,28 @@
 package com.amaricevic.stadiums
 
 import android.app.Application
+import android.content.SharedPreferences
+import com.amaricevic.stadiums.commons.constants.PREFS_NAME
 import com.google.firebase.FirebaseApp
-import com.amaricevic.stadiums.di.AppComponent
-import com.amaricevic.stadiums.di.DaggerAppComponent
-import com.amaricevic.stadiums.di.module.AppModule
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class App : Application() {
 
     companion object {
-        val appComponent: AppComponent by lazy { DaggerAppComponent.builder().appModule(AppModule(instance)).build() }
-
         internal lateinit var instance: App
+        internal lateinit var database: DatabaseReference
+        internal lateinit var auth: FirebaseAuth
+        internal lateinit var prefs: SharedPreferences
     }
 
     override fun onCreate() {
         super.onCreate()
         FirebaseApp.initializeApp(this)
         instance = this
-        appComponent.inject(this)
+        auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance().reference
+        prefs = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
     }
 }

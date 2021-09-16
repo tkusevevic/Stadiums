@@ -8,7 +8,8 @@ import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.ui.listeners.OnItemClickListener
 import com.amaricevic.stadiums.ui.stadiums.holder.StadiumViewHolder
 
-class StadiumAdapter(private val listener: OnItemClickListener) : RecyclerView.Adapter<StadiumViewHolder>() {
+class StadiumAdapter(private val listener: OnItemClickListener) :
+    RecyclerView.Adapter<StadiumViewHolder>() {
 
     private val stadiums: MutableList<Stadium> = mutableListOf()
 
@@ -19,7 +20,8 @@ class StadiumAdapter(private val listener: OnItemClickListener) : RecyclerView.A
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StadiumViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.holder_stadium, parent, false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.holder_stadium, parent, false)
         return StadiumViewHolder(listener, view)
     }
 

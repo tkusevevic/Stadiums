@@ -4,7 +4,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class EndlessScrollListener(layoutManager: LinearLayoutManager) : RecyclerView.OnScrollListener() {
+abstract class EndlessScrollListener(layoutManager: LinearLayoutManager) :
+    RecyclerView.OnScrollListener() {
 
     private var visibleThreshold = 5
     private var currentPage = 1
@@ -18,8 +19,10 @@ abstract class EndlessScrollListener(layoutManager: LinearLayoutManager) : Recyc
         var lastVisibleItemPosition = 0
         val totalItemCount = mLayoutManager.itemCount
         when (mLayoutManager) {
-            is GridLayoutManager -> lastVisibleItemPosition = (mLayoutManager as GridLayoutManager).findLastVisibleItemPosition()
-            is LinearLayoutManager -> lastVisibleItemPosition = (mLayoutManager as LinearLayoutManager).findLastVisibleItemPosition()
+            is GridLayoutManager -> lastVisibleItemPosition =
+                (mLayoutManager as GridLayoutManager).findLastVisibleItemPosition()
+            is LinearLayoutManager -> lastVisibleItemPosition =
+                (mLayoutManager as LinearLayoutManager).findLastVisibleItemPosition()
         }
 
         if (totalItemCount < previousTotalItemCount) {

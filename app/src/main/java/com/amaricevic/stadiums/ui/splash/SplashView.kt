@@ -1,6 +1,6 @@
 package com.amaricevic.stadiums.ui.splash
 
-interface SplashView  {
+interface SplashView {
 
     fun startApp()
 

@@ -13,7 +13,9 @@
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.13134057971014493" />
         <entry key="app/src/main/res/layout/activity_movie_details.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_movies.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.12454710144927536" />
         <entry key="app/src/main/res/layout/activity_search_movies.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_stadiums.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_all_stadiums.xml" value="0.13134057971014493" />
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.1503623188405797" />

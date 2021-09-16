@@ -7,37 +7,51 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.R
 import com.amaricevic.stadiums.commons.constants.STADIUM_KEY
 import com.amaricevic.stadiums.commons.extensions.hide
 import com.amaricevic.stadiums.commons.extensions.show
 import com.amaricevic.stadiums.data.model.Stadium
-import com.amaricevic.stadiums.favoritesPresenter
-import com.amaricevic.stadiums.presentation.FavoritesPresenter
+import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
+import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
 import com.amaricevic.stadiums.ui.listeners.OnItemClickListener
 import com.amaricevic.stadiums.ui.stadium_details.StadiumDetailsActivity
 import com.amaricevic.stadiums.ui.stadiums.adapter.StadiumAdapter
 import com.amaricevic.stadiums.ui.stadiums.views.FavoritesView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_favorites.*
 
 class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
 
-    private val presenter: FavoritesPresenter by lazy { favoritesPresenter() }
+    private val auth: AuthenticationHelperImpl by lazy {
+        AuthenticationHelperImpl(
+            App.auth,
+            DatabaseHelperImpl(App.database)
+        )
+    }
+
+    private val database: DatabaseHelperImpl by lazy {
+        DatabaseHelperImpl(App.database)
+    }
 
     private val adapter by lazy { StadiumAdapter(this) }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.fragment_favorites, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initPresenter()
         initRecycler()
-        loadFavorites()
+        getFavorites()
     }
 
-    private fun initPresenter() = presenter.setBaseview(this)
 
     private fun initRecycler() {
         recyclerViewFavorites.adapter = adapter
@@ -45,8 +59,30 @@ class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
         recyclerViewFavorites.layoutManager = lm
     }
 
-    private fun loadFavorites() = presenter.getFavorites()
+    // logic functions
 
+    private fun getFavorites() {
+        val userId = auth.getCurrentUserId()
+        userId?.let { database.listenToFavoriteStadiums(it, { this.onSuccessfulRequest(it) }) }
+    }
+
+    private fun onSuccessfulRequest(stadiums: List<Stadium>) {
+        if (stadiums.isEmpty()) {
+            this.showMessageOnScreen()
+        } else {
+            this.hideMessageOnScreen()
+        }
+        this.setFavorites(stadiums)
+    }
+
+    private fun onLikeTapped(stadium: Stadium) {
+        stadium.isLiked = !stadium.isLiked
+        auth.getCurrentUser()?.uid?.run {
+            database.onStadiumLiked(this, stadium)
+        }
+    }
+
+    // view functions
     override fun setFavorites(stadiums: List<Stadium>) = adapter.setList(stadiums)
 
     override fun onStadiumClick(stadium: Stadium) {
@@ -57,7 +93,7 @@ class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
     }
 
     override fun onLikeClick(stadium: Stadium) {
-        presenter.onLikeTapped(stadium)
+        this.onLikeTapped(stadium)
         adapter.setLiked(stadium.id, stadium.isLiked)
     }
 

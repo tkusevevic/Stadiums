@@ -9,8 +9,4 @@
         <item name="android:windowBackground">@drawable/stadium_icon</item>
     </style>
 
-    <style name="FacebookLoginButton">
-        <item name="android:background">#3B5998</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-    </style>
 </resources>

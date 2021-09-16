@@ -1,25 +1,31 @@
 package com.amaricevic.stadiums.firebase.authentication
 
-import com.google.firebase.auth.AuthCredential
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.UserProfileChangeRequest
 import com.amaricevic.stadiums.commons.extensions.mapToUser
 import com.amaricevic.stadiums.data.model.User
 import com.amaricevic.stadiums.firebase.EmptyRequestListener
 import com.amaricevic.stadiums.firebase.UserRequestListener
 import com.amaricevic.stadiums.firebase.database.DatabaseHelper
-import javax.inject.Inject
+import com.google.firebase.auth.AuthCredential
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.UserProfileChangeRequest
 
-class AuthenticationHelperImpl @Inject constructor(private val firebaseAuth: FirebaseAuth,
-                                                   private val databaseHelper: DatabaseHelper) : AuthenticationHelper {
+class AuthenticationHelperImpl constructor(
+    private val firebaseAuth: FirebaseAuth,
+    private val databaseHelper: DatabaseHelper
+) : AuthenticationHelper {
 
     override fun editUser(user: User, listener: UserRequestListener) {
         databaseHelper.saveUser(user)
         listener.onSuccessfulRequest(user)
     }
 
-    override fun attemptToRegisterTheUser(email: String, password: String, name: String, listener: EmptyRequestListener) {
+    override fun attemptToRegisterTheUser(
+        email: String,
+        password: String,
+        name: String,
+        listener: EmptyRequestListener
+    ) {
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 val user = firebaseAuth.currentUser
@@ -55,11 +61,11 @@ class AuthenticationHelperImpl @Inject constructor(private val firebaseAuth: Fir
 
     override fun signInWithFacebook(credential: AuthCredential, listener: UserRequestListener) {
         firebaseAuth.signInWithCredential(credential)
-                .addOnCompleteListener {
-                    val user = getCurrentUser()?.mapToUser()
-                    user?.let { listener.onSuccessfulRequest(it) }
+            .addOnCompleteListener {
+                val user = getCurrentUser()?.mapToUser()
+                user?.let { listener.onSuccessfulRequest(it) }
 
-                }
+            }
     }
 
     override fun logTheUserOut() {

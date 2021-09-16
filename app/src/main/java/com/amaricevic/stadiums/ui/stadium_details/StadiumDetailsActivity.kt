@@ -2,24 +2,36 @@ package com.amaricevic.stadiums.ui.stadium_details
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.R
 import com.amaricevic.stadiums.commons.constants.STADIUM_KEY
 import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.data.model.Stadium
-import com.amaricevic.stadiums.stadiumDetailsPresenter
-import com.amaricevic.stadiums.presentation.StadiumDetailsPresenter
+import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
+import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details.*
 import java.io.Serializable
 
 class StadiumDetailsActivity : AppCompatActivity(), DetailsView {
 
-    private val presenter: StadiumDetailsPresenter by lazy { stadiumDetailsPresenter() }
+    private val auth: AuthenticationHelperImpl by lazy {
+        AuthenticationHelperImpl(
+            App.auth,
+            DatabaseHelperImpl(App.database)
+        )
+    }
+
+    private val database: DatabaseHelperImpl by lazy {
+        DatabaseHelperImpl(App.database)
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
-        initPresenter()
         getDetails()
         initListeners()
     }
@@ -30,11 +42,18 @@ class StadiumDetailsActivity : AppCompatActivity(), DetailsView {
             val intent = this.intent
             val bundle: Bundle? = intent.extras
             val stadium: Serializable? = bundle?.getSerializable(STADIUM_KEY)
-            presenter.onLikeTapped(stadium as Stadium)
+            this.onLikeTapped(stadium as Stadium)
         }
     }
 
-    private fun initPresenter() = presenter.setBaseview(this)
+    // logic functions
+    private fun onLikeTapped(stadium: Stadium) {
+        stadium.isLiked = !stadium.isLiked
+        auth.getCurrentUser()?.uid?.run {
+            database.onStadiumLiked(this, stadium)
+        }
+        this.setLike(stadium.isLiked)
+    }
 
     private fun getDetails() {
         val intent = this.intent
@@ -43,12 +62,13 @@ class StadiumDetailsActivity : AppCompatActivity(), DetailsView {
         showData(stadium as Stadium)
     }
 
+    // view functions
     override fun showData(stadium: Stadium) {
         Picasso.get()
-                .load(stadium.imageUrl)
-                .resize(180, 180)
-                .centerCrop()
-                .into(imageDetails)
+            .load(stadium.imageUrl)
+            .resize(180, 180)
+            .centerCrop()
+            .into(imageDetails)
 
         if (stadium.isLiked) {
             likeStadiumDetails.setImageResource(R.drawable.like_red_fill)

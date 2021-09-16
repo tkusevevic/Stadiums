@@ -19,5 +19,5 @@ interface DatabaseHelper {
 
     fun addFavorites(userId: String, stadiums: List<Stadium>)
 
-    fun getUsers( onUsersRecieved: (List<User>) -> Unit)
+    fun getUsers(onUsersRecieved: (List<User>) -> Unit)
 }

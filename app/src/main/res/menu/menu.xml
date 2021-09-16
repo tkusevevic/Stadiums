@@ -8,12 +8,6 @@
         android:title="TOP RATED"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_search"
-        android:enabled="true"
-        android:icon="@drawable/search_red"
-        android:title="SEARCH"
-        app:showAsAction="ifRoom" />
-    <item
         android:id="@+id/action_favorites"
         android:enabled="true"
         android:icon="@drawable/like_red_fill"

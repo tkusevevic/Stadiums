@@ -9,7 +9,7 @@ class Swipeable : ViewPager {
 
     constructor(context: Context) : super(context)
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {}
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
     override fun onInterceptTouchEvent(event: MotionEvent): Boolean = false
 

@@ -2,14 +2,15 @@ package com.amaricevic.stadiums.ui.stadiums.holder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import com.amaricevic.stadiums.R
 import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.ui.listeners.OnItemClickListener
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.holder_stadium.view.*
 
-class StadiumViewHolder(private val listener: OnItemClickListener, itemView: View) : RecyclerView.ViewHolder(itemView) {
+class StadiumViewHolder(private val listener: OnItemClickListener, itemView: View) :
+    RecyclerView.ViewHolder(itemView) {
 
 
     fun setItem(stadium: Stadium) = with(itemView) {
@@ -19,10 +20,10 @@ class StadiumViewHolder(private val listener: OnItemClickListener, itemView: Vie
             like.setImageResource(R.drawable.like_red)
         }
         Picasso.get()
-                .load(stadium.imageUrl)
-                .resize(720, 720)
-                .centerCrop()
-                .into(image)
+            .load(stadium.imageUrl)
+            .resize(720, 720)
+            .centerCrop()
+            .into(image)
         title.text = stadium.name
         city.text = String.format("City: %s", stadium.city)
         capacity.text = String.format("Capacity: %s", stadium.capacity)
