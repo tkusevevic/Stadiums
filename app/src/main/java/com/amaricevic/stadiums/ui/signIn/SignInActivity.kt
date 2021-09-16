@@ -2,7 +2,6 @@ package com.amaricevic.stadiums.ui.signIn
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.amaricevic.stadiums.App
@@ -17,17 +16,15 @@ import com.amaricevic.stadiums.commons.utils.checkEmailEmpty
 import com.amaricevic.stadiums.commons.utils.checkPasswordEmpty
 import com.amaricevic.stadiums.commons.utils.isValidEmail
 import com.amaricevic.stadiums.data.model.User
-import com.amaricevic.stadiums.firebase.UserRequestListener
+import com.amaricevic.stadiums.firebase.SignUpRequestListener
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
 import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.amaricevic.stadiums.ui.registration.RegistrationActivity
 import com.amaricevic.stadiums.ui.stadiums.StadiumsActivity
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
-class SignInActivity : AppCompatActivity(), SignInView, UserRequestListener {
+class SignInActivity : AppCompatActivity(), SignInView, SignUpRequestListener {
 
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
@@ -82,7 +79,6 @@ class SignInActivity : AppCompatActivity(), SignInView, UserRequestListener {
     }
 
     override fun onSuccessfulRequest(user: User) {
-        Log.d("TOMKEE2", user.id)
         prefs.saveId(user.id)
         this.startStadiumActivity(user)
         this.hideProgressAndShowOther()

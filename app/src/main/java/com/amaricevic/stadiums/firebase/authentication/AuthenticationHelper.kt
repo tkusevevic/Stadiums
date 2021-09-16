@@ -1,23 +1,19 @@
 package com.amaricevic.stadiums.firebase.authentication
 
-import com.amaricevic.stadiums.data.model.User
-import com.amaricevic.stadiums.firebase.EmptyRequestListener
-import com.amaricevic.stadiums.firebase.UserRequestListener
-import com.google.firebase.auth.AuthCredential
+import com.amaricevic.stadiums.firebase.RegisterRequestListener
+import com.amaricevic.stadiums.firebase.SignUpRequestListener
 import com.google.firebase.auth.FirebaseUser
 
 interface AuthenticationHelper {
 
-    fun logTheUserIn(email: String, password: String, listener: UserRequestListener)
+    fun logTheUserIn(email: String, password: String, listener: SignUpRequestListener)
 
     fun attemptToRegisterTheUser(
         email: String,
         password: String,
         name: String,
-        listener: EmptyRequestListener
+        listener: RegisterRequestListener
     )
-
-    fun setUserDisplayName(username: String)
 
     fun logTheUserOut()
 
@@ -26,8 +22,4 @@ interface AuthenticationHelper {
     fun getCurrentUserId(): String?
 
     fun getCurrentUser(): FirebaseUser?
-
-    fun editUser(user: User, listener: UserRequestListener)
-
-    fun signInWithFacebook(credential: AuthCredential, listener: UserRequestListener)
 }

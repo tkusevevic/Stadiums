@@ -24,9 +24,8 @@ class CustomPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
             0 -> ALL_STADIUMS
-            1 -> SEARCH
-            2 -> FAVORITES
-            3 -> MAP
+            1 -> FAVORITES
+            2 -> MAP
             else -> null
         }
     }

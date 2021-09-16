@@ -25,6 +25,7 @@ import kotlinx.android.synthetic.main.fragment_all_stadiums.*
 
 class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
 
+
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
@@ -48,9 +49,9 @@ class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getFavorites()
         initRecyclerView()
         getStadiums()
+        getFavorites()
     }
 
     private fun initRecyclerView() {

@@ -1,6 +1,6 @@
 package com.amaricevic.stadiums.firebase
 
-interface EmptyRequestListener {
+interface RegisterRequestListener {
 
     fun onSuccessfulRequest()
 

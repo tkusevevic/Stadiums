@@ -1,30 +1,22 @@
 package com.amaricevic.stadiums.firebase.authentication
 
 import com.amaricevic.stadiums.commons.extensions.mapToUser
-import com.amaricevic.stadiums.data.model.User
-import com.amaricevic.stadiums.firebase.EmptyRequestListener
-import com.amaricevic.stadiums.firebase.UserRequestListener
+import com.amaricevic.stadiums.firebase.RegisterRequestListener
+import com.amaricevic.stadiums.firebase.SignUpRequestListener
 import com.amaricevic.stadiums.firebase.database.DatabaseHelper
-import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.UserProfileChangeRequest
 
 class AuthenticationHelperImpl constructor(
     private val firebaseAuth: FirebaseAuth,
     private val databaseHelper: DatabaseHelper
 ) : AuthenticationHelper {
 
-    override fun editUser(user: User, listener: UserRequestListener) {
-        databaseHelper.saveUser(user)
-        listener.onSuccessfulRequest(user)
-    }
-
     override fun attemptToRegisterTheUser(
         email: String,
         password: String,
         name: String,
-        listener: EmptyRequestListener
+        listener: RegisterRequestListener
     ) {
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
@@ -41,7 +33,7 @@ class AuthenticationHelperImpl constructor(
         }
     }
 
-    override fun logTheUserIn(email: String, password: String, listener: UserRequestListener) {
+    override fun logTheUserIn(email: String, password: String, listener: SignUpRequestListener) {
         firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 firebaseAuth.currentUser?.run {
@@ -51,21 +43,6 @@ class AuthenticationHelperImpl constructor(
                 listener.onFailedRequest()
             }
         }
-    }
-
-    override fun setUserDisplayName(username: String) {
-        val currentUser = firebaseAuth.currentUser
-        val request = UserProfileChangeRequest.Builder().setDisplayName(username).build()
-        currentUser?.updateProfile(request)?.addOnCompleteListener { }
-    }
-
-    override fun signInWithFacebook(credential: AuthCredential, listener: UserRequestListener) {
-        firebaseAuth.signInWithCredential(credential)
-            .addOnCompleteListener {
-                val user = getCurrentUser()?.mapToUser()
-                user?.let { listener.onSuccessfulRequest(it) }
-
-            }
     }
 
     override fun logTheUserOut() {

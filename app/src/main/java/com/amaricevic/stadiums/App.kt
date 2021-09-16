@@ -11,7 +11,6 @@ import com.google.firebase.database.FirebaseDatabase
 class App : Application() {
 
     companion object {
-        internal lateinit var instance: App
         internal lateinit var database: DatabaseReference
         internal lateinit var auth: FirebaseAuth
         internal lateinit var prefs: SharedPreferences
@@ -20,7 +19,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         FirebaseApp.initializeApp(this)
-        instance = this
         auth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance().reference
         prefs = this.getSharedPreferences(PREFS_NAME, MODE_PRIVATE)

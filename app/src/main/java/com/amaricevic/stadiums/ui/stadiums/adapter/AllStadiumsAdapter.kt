@@ -24,11 +24,6 @@ class AllStadiumsAdapter(private val listener: OnItemClickListener) :
         notifyDataSetChanged()
     }
 
-    fun clearItems() {
-        stadiums.clear()
-        notifyDataSetChanged()
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StadiumViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.holder_stadium, parent, false)

@@ -38,7 +38,6 @@ class MapFragment : Fragment(), OnMapReadyCallback,
 
 
     companion object {
-        fun newInstance(): MapFragment = MapFragment()
         private const val DEFAULT_LAT = 45.556299
         private const val DEFAULT_LNG = 18.688722
         private const val ZOOM_CAMERA_VALUE = 6.5f
@@ -87,7 +86,6 @@ class MapFragment : Fragment(), OnMapReadyCallback,
     }
 
     // view functions
-
     override fun onMarkerClick(marker: Marker): Boolean {
         map?.moveCamera(
             CameraUpdateFactory.newLatLngZoom(

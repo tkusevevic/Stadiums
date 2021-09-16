@@ -2,7 +2,7 @@ package com.amaricevic.stadiums.firebase
 
 import com.amaricevic.stadiums.data.model.User
 
-interface UserRequestListener {
+interface SignUpRequestListener {
 
     fun onSuccessfulRequest(user: User)
 
