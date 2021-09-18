@@ -6,10 +6,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_color">
+
+    <TextView
+        android:id="@+id/mapTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/mapTitle"
+        android:textColor="@color/main_green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/signOutMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/signOut"
+        android:textColor="@color/main_green"
+        android:textSize="15sp" />
+
+    </RelativeLayout>
+
     <FrameLayout
         android:id="@+id/mapLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
         android:visibility="visible">
 
         <fragment

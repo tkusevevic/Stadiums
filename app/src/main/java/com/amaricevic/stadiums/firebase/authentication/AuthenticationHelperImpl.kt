@@ -1,15 +1,18 @@
 package com.amaricevic.stadiums.firebase.authentication
 
+import android.content.SharedPreferences
 import com.amaricevic.stadiums.commons.extensions.mapToUser
 import com.amaricevic.stadiums.firebase.RegisterRequestListener
 import com.amaricevic.stadiums.firebase.SignUpRequestListener
 import com.amaricevic.stadiums.firebase.database.DatabaseHelper
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
 class AuthenticationHelperImpl constructor(
     private val firebaseAuth: FirebaseAuth,
-    private val databaseHelper: DatabaseHelper
+    private val databaseHelper: DatabaseHelper,
+    private val prefs: PreferencesHelperImpl,
 ) : AuthenticationHelper {
 
     override fun attemptToRegisterTheUser(
@@ -46,6 +49,7 @@ class AuthenticationHelperImpl constructor(
     }
 
     override fun logTheUserOut() {
+        prefs.removeId()
         firebaseAuth.signOut()
     }
 

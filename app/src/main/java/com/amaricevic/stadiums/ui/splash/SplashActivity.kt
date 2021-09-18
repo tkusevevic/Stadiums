@@ -3,7 +3,6 @@ package com.amaricevic.stadiums.ui.splash
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.amaricevic.stadiums.ui.signIn.SignInActivity

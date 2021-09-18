@@ -16,19 +16,21 @@
     <list default="true" id="2414a5db-2e92-4b70-be7e-376468f6b00c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/EmptyRequestListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/RegisterRequestListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/StadiumsRequestListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/UserRequestListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/SignUpRequestListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/authentication/AuthenticationHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/authentication/AuthenticationHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/authentication/AuthenticationHelperImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/firebase/authentication/AuthenticationHelperImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/listeners/EndlessScrollListener.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/map/MapFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/map/MapFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/registration/RegistrationActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/registration/RegistrationActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/signIn/SignInActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/signIn/SignInActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/splash/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/splash/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadium_details/StadiumDetailsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadium_details/StadiumDetailsActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/AllStadiumsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/AllStadiumsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/FavoritesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/FavoritesFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/adapter/AllStadiumsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/adapter/AllStadiumsAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/pager/CustomPagerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/pager/CustomPagerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/adapter/StadiumAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/amaricevic/stadiums/ui/stadiums/adapter/StadiumAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_stadiums.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_all_stadiums.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

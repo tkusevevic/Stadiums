@@ -19,6 +19,28 @@
             android:textColor="@color/main_green"
             android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/signOutAllStadiums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/signOut"
+            android:textColor="@color/main_green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sortByAllStadiums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentStart="true"
+            android:text="@string/sort_by_cap_down"
+            android:textColor="@color/main_green"
+            android:textSize="15sp" />
+
     </RelativeLayout>
 
     <TextView

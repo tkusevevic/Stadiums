@@ -17,6 +17,7 @@ import com.amaricevic.stadiums.commons.utils.isValidEmail
 import com.amaricevic.stadiums.firebase.RegisterRequestListener
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.amaricevic.stadiums.ui.signIn.SignInActivity
 import kotlinx.android.synthetic.main.activity_registration.*
 
@@ -25,7 +26,8 @@ class RegistrationActivity : AppCompatActivity(), RegistrationView, RegisterRequ
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 

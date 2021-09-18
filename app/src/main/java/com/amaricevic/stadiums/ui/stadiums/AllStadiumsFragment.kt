@@ -11,16 +11,17 @@ import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.R
 import com.amaricevic.stadiums.commons.constants.STADIUM_KEY
 import com.amaricevic.stadiums.commons.extensions.hide
+import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.commons.extensions.show
 import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.amaricevic.stadiums.ui.listeners.OnItemClickListener
+import com.amaricevic.stadiums.ui.signIn.SignInActivity
 import com.amaricevic.stadiums.ui.stadium_details.StadiumDetailsActivity
 import com.amaricevic.stadiums.ui.stadiums.adapter.AllStadiumsAdapter
 import com.amaricevic.stadiums.ui.stadiums.views.AllStadiumsView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_all_stadiums.*
 
 class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
@@ -29,7 +30,8 @@ class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 
@@ -49,9 +51,24 @@ class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initListeners()
         initRecyclerView()
         getStadiums()
         getFavorites()
+    }
+
+    private fun initListeners() {
+        signOutAllStadiums.onClick {
+            auth.logTheUserOut()
+            val intent = Intent(activity, SignInActivity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
+
+        sortByAllStadiums.onClick {
+            val sort = adapter.changeSort()
+            if(sort == 0) showSortAsc() else showSortDesc()
+        }
     }
 
     private fun initRecyclerView() {
@@ -115,5 +132,13 @@ class AllStadiumsFragment : Fragment(), OnItemClickListener, AllStadiumsView {
     override fun showMessageEmptyList() = noStadiums.show()
 
     override fun hideMessageEmptyList() = noStadiums.hide()
+
+    private fun showSortDesc() {
+        sortByAllStadiums.text = "Capacity DESC"
+    }
+
+    private fun showSortAsc() {
+        sortByAllStadiums.text = "Capacity ASC"
+    }
 }
 

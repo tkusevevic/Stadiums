@@ -13,6 +13,9 @@ class AllStadiumsAdapter(private val listener: OnItemClickListener) :
 
     private val stadiums: MutableList<Stadium> = mutableListOf()
 
+    // 0 for desceding, 1 for ascending
+    private var sortType = 0
+
     fun setItems(list: List<Stadium>) {
         stadiums.clear()
         stadiums.addAll(list)
@@ -52,5 +55,27 @@ class AllStadiumsAdapter(private val listener: OnItemClickListener) :
         val favoriteIds = favorite.map { it.id }
         stadiums.forEach { it.isLiked = it.id in favoriteIds }
         notifyDataSetChanged()
+    }
+
+    private fun sortByAsc() {
+        this.sortType = 1
+        stadiums.sortBy { it.capacity.replace(" ","").toInt() }
+        notifyDataSetChanged()
+    }
+
+    private fun sortByDesc() {
+        this.sortType = 0
+        stadiums.sortByDescending { it.capacity.replace(" ","").toInt() }
+        notifyDataSetChanged()
+    }
+
+    fun changeSort(): Int {
+        return if(sortType == 0) {
+            this.sortByAsc()
+            sortType
+        } else {
+            this.sortByDesc()
+            sortType
+        }
     }
 }

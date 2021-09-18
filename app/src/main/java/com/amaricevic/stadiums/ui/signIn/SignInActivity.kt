@@ -29,7 +29,8 @@ class SignInActivity : AppCompatActivity(), SignInView, SignUpRequestListener {
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 

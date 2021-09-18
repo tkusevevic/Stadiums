@@ -11,16 +11,17 @@ import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.R
 import com.amaricevic.stadiums.commons.constants.STADIUM_KEY
 import com.amaricevic.stadiums.commons.extensions.hide
+import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.commons.extensions.show
 import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.amaricevic.stadiums.ui.listeners.OnItemClickListener
+import com.amaricevic.stadiums.ui.signIn.SignInActivity
 import com.amaricevic.stadiums.ui.stadium_details.StadiumDetailsActivity
 import com.amaricevic.stadiums.ui.stadiums.adapter.StadiumAdapter
 import com.amaricevic.stadiums.ui.stadiums.views.FavoritesView
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_favorites.*
 
 class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
@@ -28,7 +29,8 @@ class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 
@@ -48,10 +50,24 @@ class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initListeners()
         initRecycler()
         getFavorites()
     }
 
+    private fun initListeners() {
+        signOutFavorites.onClick {
+            auth.logTheUserOut()
+            val intent = Intent(activity, SignInActivity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
+
+        sortByFavorites.onClick {
+            val sort = adapter.changeSort()
+            if (sort == 0) showSortAsc() else showSortDesc()
+        }
+    }
 
     private fun initRecycler() {
         recyclerViewFavorites.adapter = adapter
@@ -100,4 +116,12 @@ class FavoritesFragment : Fragment(), OnItemClickListener, FavoritesView {
     override fun showMessageOnScreen() = noFavorites.show()
 
     override fun hideMessageOnScreen() = noFavorites.hide()
+
+    private fun showSortDesc() {
+        sortByFavorites.text = "Capacity DESC"
+    }
+
+    private fun showSortAsc() {
+        sortByFavorites.text = "Capacity ASC"
+    }
 }

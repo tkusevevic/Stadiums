@@ -1600,6 +1600,7 @@ id listMode
 id list_item
 id map
 id mapLayout
+id mapTitle
 id masked
 id match_constraint
 id match_parent
@@ -1690,6 +1691,9 @@ id showCustom
 id showHome
 id showTitle
 id signIn
+id signOutAllStadiums
+id signOutFavorites
+id signOutMap
 id sin
 id skipped
 id smallLabel
@@ -1697,6 +1701,8 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id sortByAllStadiums
+id sortByFavorites
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -1947,6 +1953,7 @@ string hide_bottom_view_on_scroll_behavior
 string hint_email
 string hint_name
 string hint_password
+string mapTitle
 string mtrl_chip_close_icon_content_description
 string no_favorites
 string password_toggle_content_description
@@ -1956,6 +1963,9 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string signOut
+string sort_by_cap_down
+string sort_by_cap_up
 string stadiumDetailsTitle
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

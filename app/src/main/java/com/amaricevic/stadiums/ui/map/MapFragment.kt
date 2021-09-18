@@ -1,5 +1,6 @@
 package com.amaricevic.stadiums.ui.map
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,9 +9,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.amaricevic.stadiums.App
 import com.amaricevic.stadiums.R
+import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
+import com.amaricevic.stadiums.ui.signIn.SignInActivity
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -18,8 +22,8 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_favorites.*
+import kotlinx.android.synthetic.main.fragment_map.*
 
 class MapFragment : Fragment(), OnMapReadyCallback,
     MapView, GoogleMap.OnMarkerClickListener {
@@ -27,7 +31,8 @@ class MapFragment : Fragment(), OnMapReadyCallback,
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 
@@ -57,7 +62,17 @@ class MapFragment : Fragment(), OnMapReadyCallback,
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initListeners()
         this.getStadiums()
+    }
+
+    private fun initListeners() {
+        signOutMap.onClick {
+            auth.logTheUserOut()
+            val intent = Intent(activity, SignInActivity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
     }
 
     override fun onMapReady(googleMap: GoogleMap?) {

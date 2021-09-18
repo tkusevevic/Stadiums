@@ -9,8 +9,7 @@ import com.amaricevic.stadiums.commons.extensions.onClick
 import com.amaricevic.stadiums.data.model.Stadium
 import com.amaricevic.stadiums.firebase.authentication.AuthenticationHelperImpl
 import com.amaricevic.stadiums.firebase.database.DatabaseHelperImpl
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
+import com.amaricevic.stadiums.preferences.PreferencesHelperImpl
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details.*
 import java.io.Serializable
@@ -20,7 +19,8 @@ class StadiumDetailsActivity : AppCompatActivity(), DetailsView {
     private val auth: AuthenticationHelperImpl by lazy {
         AuthenticationHelperImpl(
             App.auth,
-            DatabaseHelperImpl(App.database)
+            DatabaseHelperImpl(App.database),
+            PreferencesHelperImpl(App.prefs)
         )
     }
 

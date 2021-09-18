@@ -1599,6 +1599,7 @@ int id listMode 0x7f0800e9
 int id list_item 0x7f0800ea
 int id map 0x7f0800eb
 int id mapLayout 0x7f0800ec
+int id mapTitle 0x7f0801aa
 int id masked 0x7f0800ed
 int id match_constraint 0x7f0800ee
 int id match_parent 0x7f0800ef
@@ -1689,6 +1690,9 @@ int id showCustom 0x7f080143
 int id showHome 0x7f080144
 int id showTitle 0x7f080145
 int id signIn 0x7f080146
+int id signOutAllStadiums 0x7f0801a6
+int id signOutFavorites 0x7f0801a7
+int id signOutMap 0x7f0801ab
 int id sin 0x7f080147
 int id skipped 0x7f080148
 int id smallLabel 0x7f080149
@@ -1696,6 +1700,8 @@ int id snackbar_action 0x7f08014a
 int id snackbar_text 0x7f08014b
 int id snap 0x7f08014c
 int id snapMargins 0x7f08014d
+int id sortByAllStadiums 0x7f0801a8
+int id sortByFavorites 0x7f0801a9
 int id south 0x7f08014e
 int id spacer 0x7f08014f
 int id special_effects_controller_view_tag 0x7f080150
@@ -1946,6 +1952,7 @@ int string hide_bottom_view_on_scroll_behavior 0x7f0e0040
 int string hint_email 0x7f0e0041
 int string hint_name 0x7f0e0042
 int string hint_password 0x7f0e0043
+int string mapTitle 0x7f0e0052
 int string mtrl_chip_close_icon_content_description 0x7f0e0044
 int string no_favorites 0x7f0e0045
 int string password_toggle_content_description 0x7f0e0046
@@ -1955,6 +1962,9 @@ int string path_password_eye_mask_visible 0x7f0e0049
 int string path_password_strike_through 0x7f0e004a
 int string project_id 0x7f0e004b
 int string search_menu_title 0x7f0e004c
+int string signOut 0x7f0e004f
+int string sort_by_cap_down 0x7f0e0050
+int string sort_by_cap_up 0x7f0e0051
 int string stadiumDetailsTitle 0x7f0e004d
 int string status_bar_notification_info_overflow 0x7f0e004e
 int style AlertDialog_AppCompat 0x7f0f0000
